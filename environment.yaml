@@ -1,0 +1,12 @@
+name: hw7
+channels:
+  - defaults
+dependencies:
+  - conda
+  - python
+  - pip
+  - matplotlib
+  - pip:
+    - numpy
+    - pandas
+    - pycodestyle
