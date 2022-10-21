@@ -46,4 +46,4 @@ jobs:
         environment-file: environment.yaml
     - name: run the unit test
       run: |
-        python -m unittest discover -s <directory> -p '*_test.py'
+         python -m unittest discover -s tests\unit -p 'test_data_processor.py'
