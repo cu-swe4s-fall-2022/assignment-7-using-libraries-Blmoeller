@@ -19,7 +19,7 @@ jobs:
           activate-environment: hw7
           environment-file: environment.yaml
       - run: |
-          bash test/func/test_plotter.sh
+          bash tests/func/test_plotter.sh
   codestyle:
     runs-on: ubuntu-latest
     defaults:
@@ -46,4 +46,4 @@ jobs:
         environment-file: environment.yaml
     - name: run the unit test
       run: |
-        python -m unittest tests\unit\test_data_processor.py
+        python -m unittest \tests\unit\test_data_processor.py
