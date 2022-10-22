@@ -41,7 +41,7 @@ def get_random_matrix(num_rows, num_columns):
 
 
 def get_file_dimensions(file_name):
-    csv_file = pd.read_csv('iris.data', sep=',' , header=None)
+    csv_file = pd.read_csv('iris.data', sep=',', header=None)
     file_dim = csv_file.shape
     return file_dim
 
