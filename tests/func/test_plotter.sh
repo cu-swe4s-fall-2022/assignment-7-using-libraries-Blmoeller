@@ -14,9 +14,9 @@ run test_stdout python3 src/plotter.py
 assert_stdout 
 
 echo 'Looking for image files'
-[ -s src/iris_boxplot.png ] && echo "Found" || echo "Not found"
-[ -s src/petal_length_v_width_scatter.png ] && echo "Found" || echo "Not found"
-[ -s src/multi_panel_figure.png ] && echo "Found" || echo "Not found"
+[ -s output_data/iris_boxplot.png ] && echo "Found" || echo "Not found"
+[ -s output_data/petal_width_v_length_scatter.png ] && echo "Found" || echo "Not found"
+[ -s output_data/multi_panel_figure.png ] && echo "Found" || echo "Not found"
 
 echo 'Looking for iris data file'
 [ -s iris.data ] && echo "Found" || echo "Not found"
