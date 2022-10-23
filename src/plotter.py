@@ -50,6 +50,9 @@ def main():
     axes[1].legend(loc='upper right')
     plt.savefig('output_data/multi_panel_figure.png')
 
+    print("This created 3 plots: iris_boxplot.png, "
+          + "petal_length_v_width_scatter.png, and multi_panel_figure.png.")
+
 
 if __name__ == '__main__':
     main()
